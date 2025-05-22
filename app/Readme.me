@@ -1,0 +1,36 @@
+# Device Admin Oculus Test
+
+This project demonstrates the implementation of a `DeviceAdminReceiver` in an Android application. The `DeviceOwnerReceiver` class is used to manage device administration features.
+
+## Features
+
+- Implements a `DeviceAdminReceiver` to handle device administration events.
+- Provides functionality to enable and disable device admin.
+
+## Prerequisites
+
+### Android Device
+- Ensure your device is running Android 10.0 (API level 29) or higher.
+- Enable Developer Options and USB Debugging on your device.
+
+### Development Environment
+- macOS with Android Studio installed.
+- ADB (Android Debug Bridge) installed. You can download it as part of the Android SDK Platform-Tools.
+
+## Setup
+
+1. Clone the repository and open it in Android Studio.
+2. Build and run the project on your Android device.
+
+## Enabling Device Admin
+
+To enable the `DeviceAdminReceiver`:
+
+1. Install the app on your Android device.
+2. Open the app and follow the instructions to activate the device admin.
+
+Alternatively, you can use ADB to set the device admin:
+
+```bash
+adb shell dpm set-device-owner com.ahuaman.deviceadminoculustest/.presentation.DeviceOwnerReceiver
+```
